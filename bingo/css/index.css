@@ -46,10 +46,10 @@ h1 {
 
 header {
     background-color:  #0076c0;
-    flex: 0 0 40px;
+    flex: 0 0 20px;
     color: white;
     /* justify-content: center; */
-    padding: 20px;
+    padding: 4px;
 }
 footer {
     
@@ -58,7 +58,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 56px;
+    height: 40px;
     
 }
 body > section {
