@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2Succeed Bingo Night!</title>
+        <meta name="description" content="2Succeed Bingo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css"> 
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"/>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    </head>
+    
+    <body onload="init()">
+        <header>
+            <img src="logo.png" width = "30"><div class="slidecontainer" id="slider-range-max"></div>
+        </header>
+        <section>
+            <main>
+                <h1>Welcome to 2Succeed Bingo Night!</h1>
+                <h3>Select Cards to Play on the Right -></h3>
+                <h3>Make Font Bigger With the Slider on Top ^</h3>
+                <h3>Clear Boards, Hide and Show Cards and or Card Selector Below v</h3>
+                <article id="main">
+                    
+<!-- Card 1 -------------------------------------------------------------------->
+                    <table id="bingotable1">
+                    <tr class="cardtitle"><th colspan= "5">Card #1</th></tr>
+                    <tr>
+                        <th class="blue">B</th>
+                        <th class="red">I</th>
+                        <th class="white">N</th>
+                        <th class="green">G</th>
+                        <th class="yellow">O</th>
+                    </tr>
+                    <tr>
+                        <td id="square-1-1" onclick="cc(this.id)"> 14 &nbsp;</td>
+                        <td id="square-1-2" onclick="cc(this.id)"> 30 &nbsp;</td>
+                        <td id="square-1-3" onclick="cc(this.id)"> 41 &nbsp;</td>
+                        <td id="square-1-4" onclick="cc(this.id)"> 53 &nbsp;</td>
+                        <td id="square-1-5" onclick="cc(this.id)"> 74 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-1-6" onclick="cc(this.id)"> 4 &nbsp;</td>
+                        <td id="square-1-7" onclick="cc(this.id)"> 28 &nbsp;</td>
+                        <td id="square-1-8" onclick="cc(this.id)"> 35 &nbsp;</td>
+                        <td id="square-1-9" onclick="cc(this.id)"> 57 &nbsp;</td>
+                        <td id="square-1-10" onclick="cc(this.id)"> 68 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-1-11" onclick="cc(this.id)"> 10 &nbsp;</td>
+                        <td id="square-1-12" onclick="cc(this.id)"> 23 &nbsp;</td>
+                        <td id="squarefree1" onclick="cc(this.id)"> FREE</td>
+                        <td id="square-1-14" onclick="cc(this.id)"> 46 &nbsp;</td>
+                        <td id="square-1-15" onclick="cc(this.id)"> 75 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-1-16" onclick="cc(this.id)"> 8 &nbsp;</td>
+                        <td id="square-1-17" onclick="cc(this.id)"> 16 &nbsp;</td>
+                        <td id="square-1-18" onclick="cc(this.id)"> 43 &nbsp;</td>
+                        <td id="square-1-19" onclick="cc(this.id)"> 48 &nbsp;</td>
+                        <td id="square-1-20" onclick="cc(this.id)"> 70 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-1-21" onclick="cc(this.id)"> 12 &nbsp;</td>
+                        <td id="square-1-22" onclick="cc(this.id)"> 27 &nbsp;</td>
+                        <td id="square-1-23" onclick="cc(this.id)"> 39 &nbsp;</td>
+                        <td id="square-1-24" onclick="cc(this.id)"> 56 &nbsp;</td>
+                        <td id="square-1-25" onclick="cc(this.id)"> 66 &nbsp;</td>
+                    </tr>
+                </table>
+<!-- Card 2 -------------------------------------------------------------------->
+                <table id="bingotable2">
+                    <tr class="cardtitle"><th colspan= "5">Card #2</th></tr>
+                    <tr>
+                        <th class="blue">B</th>
+                        <th class="red">I</th>
+                        <th class="white">N</th>
+                        <th class="green">G</th>
+                        <th class="yellow">O</th>
+                    </tr>
+                    <tr>
+                        <td id="square-2-1" onclick="cc(this.id)"> 15 &nbsp;</td>
+                        <td id="square-2-2" onclick="cc(this.id)"> 26 &nbsp;</td>
+                        <td id="square-2-3" onclick="cc(this.id)"> 38 &nbsp;</td>
+                        <td id="square-2-4" onclick="cc(this.id)"> 59 &nbsp;</td>
+                        <td id="square-2-5" onclick="cc(this.id)"> 68 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-2-6" onclick="cc(this.id)"> 13 &nbsp;</td>
+                        <td id="square-2-7" onclick="cc(this.id)"> 20 &nbsp;</td>
+                        <td id="square-2-8" onclick="cc(this.id)"> 42 &nbsp;</td>
+                        <td id="square-2-9" onclick="cc(this.id)"> 53 &nbsp;</td>
+                        <td id="square-2-10" onclick="cc(this.id)"> 62 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-2-11" onclick="cc(this.id)"> 8 &nbsp;</td>
+                        <td id="square-2-12" onclick="cc(this.id)"> 19 &nbsp;</td>
+                        <td id="squarefree2" onclick="cc(this.id)"> FREE</td>
+                        <td id="square-2-14" onclick="cc(this.id)"> 60 &nbsp;</td>
+                        <td id="square-2-15" onclick="cc(this.id)"> 71 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-2-16" onclick="cc(this.id)"> 1 &nbsp;</td>
+                        <td id="square-2-17" onclick="cc(this.id)"> 28 &nbsp;</td>
+                        <td id="square-2-18" onclick="cc(this.id)"> 33 &nbsp;</td>
+                        <td id="square-2-19" onclick="cc(this.id)"> 55 &nbsp;</td>
+                        <td id="square-2-20" onclick="cc(this.id)"> 70 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-2-21" onclick="cc(this.id)"> 12 &nbsp;</td>
+                        <td id="square-2-22" onclick="cc(this.id)"> 24 &nbsp;</td>
+                        <td id="square-2-23" onclick="cc(this.id)"> 41 &nbsp;</td>
+                        <td id="square-2-24" onclick="cc(this.id)"> 51 &nbsp;</td>
+                        <td id="square-2-25" onclick="cc(this.id)"> 65 &nbsp;</td>
+                    </tr>
+                </table>
+<!-- Card 3 -------------------------------------------------------------------->
+                <table id="bingotable3">
+                    <tr class="cardtitle"><th colspan= "5">Card #3</th></tr>
+                    <tr>
+                        <th class="blue">B</th>
+                        <th class="red">I</th>
+                        <th class="white">N</th>
+                        <th class="green">G</th>
+                        <th class="yellow">O</th>
+                    </tr>
+                    <tr>
+                        <td id="square-3-1" onclick="cc(this.id)"> 11 &nbsp;</td>
+                        <td id="square-3-2" onclick="cc(this.id)"> 23 &nbsp;</td>
+                        <td id="square-3-3" onclick="cc(this.id)"> 44 &nbsp;</td>
+                        <td id="square-3-4" onclick="cc(this.id)"> 53 &nbsp;</td>
+                        <td id="square-3-5" onclick="cc(this.id)"> 69 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-3-6" onclick="cc(this.id)"> 5 &nbsp;</td>
+                        <td id="square-3-7" onclick="cc(this.id)"> 27 &nbsp;</td>
+                        <td id="square-3-8" onclick="cc(this.id)"> 38 &nbsp;</td>
+                        <td id="square-3-9" onclick="cc(this.id)"> 47 &nbsp;</td>
+                        <td id="square-3-10" onclick="cc(this.id)"> 65 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-3-11" onclick="cc(this.id)"> 4 &nbsp;</td>
+                        <td id="square-3-12" onclick="cc(this.id)"> 16 &nbsp;</td>
+                        <td id="squarefree3" onclick="cc(this.id)"> FREE</td>
+                        <td id="square-3-14" onclick="cc(this.id)"> 56 &nbsp;</td>
+                        <td id="square-3-15" onclick="cc(this.id)"> 63 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-3-16" onclick="cc(this.id)"> 13 &nbsp;</td>
+                        <td id="square-3-17" onclick="cc(this.id)"> 18 &nbsp;</td>
+                        <td id="square-3-18" onclick="cc(this.id)"> 40 &nbsp;</td>
+                        <td id="square-3-19" onclick="cc(this.id)"> 55 &nbsp;</td>
+                        <td id="square-3-20" onclick="cc(this.id)"> 61 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-3-21" onclick="cc(this.id)"> 9 &nbsp;</td>
+                        <td id="square-3-22" onclick="cc(this.id)"> 26 &nbsp;</td>
+                        <td id="square-3-23" onclick="cc(this.id)"> 36 &nbsp;</td>
+                        <td id="square-3-24" onclick="cc(this.id)"> 50 &nbsp;</td>
+                        <td id="square-3-25" onclick="cc(this.id)"> 74 &nbsp;</td>
+                    </tr>
+                </table>
+<!-- Card 4 -------------------------------------------------------------------->
+                <table id="bingotable4">
+                    <tr class="cardtitle"><th colspan= "5">Card #4</th></tr>
+                    <tr>
+                        <th class="blue">B</th>
+                        <th class="red">I</th>
+                        <th class="white">N</th>
+                        <th class="green">G</th>
+                        <th class="yellow">O</th>
+                    </tr>
+                    <tr>
+                        <td id="square-4-1" onclick="cc(this.id)"> 8 &nbsp;</td>
+                        <td id="square-4-2" onclick="cc(this.id)"> 29 &nbsp;</td>
+                        <td id="square-4-3" onclick="cc(this.id)"> 38 &nbsp;</td>
+                        <td id="square-4-4" onclick="cc(this.id)"> 54 &nbsp;</td>
+                        <td id="square-4-5" onclick="cc(this.id)"> 74 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-4-6" onclick="cc(this.id)"> 12 &nbsp;</td>
+                        <td id="square-4-7" onclick="cc(this.id)"> 23 &nbsp;</td>
+                        <td id="square-4-8" onclick="cc(this.id)"> 32 &nbsp;</td>
+                        <td id="square-4-9" onclick="cc(this.id)"> 50 &nbsp;</td>
+                        <td id="square-4-10" onclick="cc(this.id)"> 70 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-4-11" onclick="cc(this.id)"> 1 &nbsp;</td>
+                        <td id="square-4-12" onclick="cc(this.id)"> 30 &nbsp;</td>
+                        <td id="squarefree4" onclick="cc(this.id)"> FREE</td>
+                        <td id="square-4-14" onclick="cc(this.id)"> 48 &nbsp;</td>
+                        <td id="square-4-15" onclick="cc(this.id)"> 68 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-4-16" onclick="cc(this.id)"> 3 &nbsp;</td>
+                        <td id="square-4-17" onclick="cc(this.id)"> 25 &nbsp;</td>
+                        <td id="square-4-18" onclick="cc(this.id)"> 40 &nbsp;</td>
+                        <td id="square-4-19" onclick="cc(this.id)"> 55 &nbsp;</td>
+                        <td id="square-4-20" onclick="cc(this.id)"> 61 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-4-21" onclick="cc(this.id)"> 11 &nbsp;</td>
+                        <td id="square-4-22" onclick="cc(this.id)"> 21 &nbsp;</td>
+                        <td id="square-4-23" onclick="cc(this.id)"> 35 &nbsp;</td>
+                        <td id="square-4-24" onclick="cc(this.id)"> 59 &nbsp;</td>
+                        <td id="square-4-25" onclick="cc(this.id)"> 67 &nbsp;</td>
+                    </tr>
+                </table>
+<!-- Card 5 -------------------------------------------------------------------->
+                <table id="bingotable5">
+                    <tr class="cardtitle"><th colspan= "5">Card #5</th></tr>
+                    <tr>
+                        <th class="blue">B</th>
+                        <th class="red">I</th>
+                        <th class="white">N</th>
+                        <th class="green">G</th>
+                        <th class="yellow">O</th>
+                    </tr>
+                    <tr>
+                        <td id="square-5-1" onclick="cc(this.id)"> 14 &nbsp;</td>
+                        <td id="square-5-2" onclick="cc(this.id)"> 23 &nbsp;</td>
+                        <td id="square-5-3" onclick="cc(this.id)"> 39 &nbsp;</td>
+                        <td id="square-5-4" onclick="cc(this.id)"> 59 &nbsp;</td>
+                        <td id="square-5-5" onclick="cc(this.id)"> 63 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-5-6" onclick="cc(this.id)"> 8 &nbsp;</td>
+                        <td id="square-5-7" onclick="cc(this.id)"> 17 &nbsp;</td>
+                        <td id="square-5-8" onclick="cc(this.id)"> 35 &nbsp;</td>
+                        <td id="square-5-9" onclick="cc(this.id)"> 55 &nbsp;</td>
+                        <td id="square-5-10" onclick="cc(this.id)"> 61 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-5-11" onclick="cc(this.id)"> 15 &nbsp;</td>
+                        <td id="square-5-12" onclick="cc(this.id)"> 26 &nbsp;</td>
+                        <td id="squarefree5" onclick="cc(this.id)"> FREE</td>
+                        <td id="square-5-14" onclick="cc(this.id)"> 53 &nbsp;</td>
+                        <td id="square-5-15" onclick="cc(this.id)"> 71 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-5-16" onclick="cc(this.id)"> 10 &nbsp;</td>
+                        <td id="square-5-17" onclick="cc(this.id)"> 25 &nbsp;</td>
+                        <td id="square-5-18" onclick="cc(this.id)"> 31 &nbsp;</td>
+                        <td id="square-5-19" onclick="cc(this.id)"> 57 &nbsp;</td>
+                        <td id="square-5-20" onclick="cc(this.id)"> 64 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-5-21" onclick="cc(this.id)"> 6 &nbsp;</td>
+                        <td id="square-5-22" onclick="cc(this.id)"> 20 &nbsp;</td>
+                        <td id="square-5-23" onclick="cc(this.id)"> 44 &nbsp;</td>
+                        <td id="square-5-24" onclick="cc(this.id)"> 52 &nbsp;</td>
+                        <td id="square-5-25" onclick="cc(this.id)"> 68 &nbsp;</td>
+                    </tr>
+                </table>
+<!-- Card 6 -------------------------------------------------------------------->
+                <table id="bingotable6">
+                    <tr class="cardtitle"><th colspan= "5">Card #6</th></tr>
+                    <tr>
+                        <th class="blue">B</th>
+                        <th class="red">I</th>
+                        <th class="white">N</th>
+                        <th class="green">G</th>
+                        <th class="yellow">O</th>
+                    </tr>
+                    <tr>
+                        <td id="square-6-1" onclick="cc(this.id)"> 8 &nbsp;</td>
+                        <td id="square-6-2" onclick="cc(this.id)"> 24 &nbsp;</td>
+                        <td id="square-6-3" onclick="cc(this.id)"> 44 &nbsp;</td>
+                        <td id="square-6-4" onclick="cc(this.id)"> 48 &nbsp;</td>
+                        <td id="square-6-5" onclick="cc(this.id)"> 75 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-6-6" onclick="cc(this.id)"> 2 &nbsp;</td>
+                        <td id="square-6-7" onclick="cc(this.id)"> 20 &nbsp;</td>
+                        <td id="square-6-8" onclick="cc(this.id)"> 40 &nbsp;</td>
+                        <td id="square-6-9" onclick="cc(this.id)"> 46 &nbsp;</td>
+                        <td id="square-6-10" onclick="cc(this.id)"> 69 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-6-11" onclick="cc(this.id)"> 11 &nbsp;</td>
+                        <td id="square-6-12" onclick="cc(this.id)"> 18 &nbsp;</td>
+                        <td id="squarefree6" onclick="cc(this.id)"> FREE</td>
+                        <td id="square-6-14" onclick="cc(this.id)"> 56 &nbsp;</td>
+                        <td id="square-6-15" onclick="cc(this.id)"> 66 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-6-16" onclick="cc(this.id)"> 10 &nbsp;</td>
+                        <td id="square-6-17" onclick="cc(this.id)"> 16 &nbsp;</td>
+                        <td id="square-6-18" onclick="cc(this.id)"> 42 &nbsp;</td>
+                        <td id="square-6-19" onclick="cc(this.id)"> 49 &nbsp;</td>
+                        <td id="square-6-20" onclick="cc(this.id)"> 71 &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="square-6-21" onclick="cc(this.id)"> 5 &nbsp;</td>
+                        <td id="square-6-22" onclick="cc(this.id)"> 29 &nbsp;</td>
+                        <td id="square-6-23" onclick="cc(this.id)"> 37 &nbsp;</td>
+                        <td id="square-6-24" onclick="cc(this.id)"> 53 &nbsp;</td>
+                        <td id="square-6-25" onclick="cc(this.id)"> 65 &nbsp;</td>
+                    </tr>
+                </table>
+                </article>
+            </main>
+            <aside id="aside">
+                <table id="cardselecttable">
+                    <tr class="cardtitle"><th colspan= "5">Card Select</th></tr>
+                    <tr>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable1');" ><label> Card 1</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable2');" ><label> Card 2</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable3');" ><label> Card 3</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable4');" ><label> Card 4</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable5');" ><label> Card 5</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable6');" ><label> Card 6</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable7');" ><label> Card 7</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable8');" ><label> Card 8</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable9');" ><label> Card 9</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable10');" ><label> Card 10</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable11');" ><label> Card 11</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable12');" ><label> Card 12</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable13');" ><label> Card 13</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable14');" ><label> Card 14</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable15');" ><label> Card 15</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable16');" ><label> Card 16</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable17');" ><label> Card 17</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable18');" ><label> Card 18</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable19');" ><label> Card 19</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable20');" ><label> Card 20</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable21');" ><label> Card 21</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable22');" ><label> Card 22</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable23');" ><label> Card 23</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable24');" ><label> Card 24</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable25');" ><label> Card 25</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable26');" ><label> Card 26</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable27');" ><label> Card 27</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable28');" ><label> Card 28</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable29');" ><label> Card 29</label></td>
+                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable30');" ><label> Card 30</label></td>
+                    </tr>
+                </table>
+                
+            </aside>
+        </section>
+        <footer>
+            <button class="alert-button" onclick="clearBoards()">Clear Boards</button><button class="button" onclick="showHideCards()">(Hide/Show) Cards</button><button class="button" onclick="showHideCardSelect()">(Hide/Show) Card Select</button>
+        </footer>
+    </body>
+<script src="index.js"></script> 
+<script src="index-angular.js"></script>  
+</html>

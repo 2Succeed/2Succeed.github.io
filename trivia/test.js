@@ -1,0 +1,5 @@
+{
+    "adult":false,
+    "backdrop_path":"/hMo3Hp1CFVJNnGcyO2EuXMOhRXz.jpg",
+        "belongs_to_collection":null,"budget":8000000,
+            "genres":[{"id":18,"name":"Drama"},{"id":80,"name":"Crime"}],"homepage":"","id":400,"imdb_id":"tt0114660","original_language":"en","original_title":"Things to Do in Denver When You're Dead","overview":"Five different criminals face imminent death after botching a job quite badly.","popularity":7.09,"poster_path":"/kATmorfxsxbS0GSKOVJe4qvPLh5.jpg","production_companies":[{"id":14,"logo_path":"/m6AHu84oZQxvq7n1rsvMNJIAsMu.png","name":"Miramax","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United States of America"}],"release_date":"1995-12-01","revenue":529766,"runtime":116,"spoken_languages":[{"iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Protect. Love. Honor. Avenge.","title":"Things to Do in Denver When You're Dead","video":false,"vote_average":6.5,"vote_count":216}
