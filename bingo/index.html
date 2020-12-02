@@ -2,20 +2,14 @@
 <html>
     <head>
         <title>2Succeed Bingo Night!</title>
-        <meta name="description" content="2Succeed Bingo">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="index.css"> 
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"/>
-        <script src="http://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
-        <script
-  src="https://code.jquery.com/ui/1.10.2/jquery-ui.min.js"
-  integrity="sha256-FgiaQnQazF/QCrF9qSvpRY6PACn9ZF8VnlgqfqD1LsE="
-  crossorigin="anonymous"></script>
+        <meta name="description" content="2Succeed Bingo">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
-    
     <body onload="init()">
         <header>
-            <img src="logo.png" width = "30"><div class="slidecontainer" id="slider-range-max"></div>
+            <img src="logo.png" width = "30"><div class="slidecontainer" id="slider"><input type="range" min="7" max="80" value="12" class="slider" id="myRange"></div>
         </header>
         <section>
             <main>
@@ -356,6 +350,5 @@
             <button class="alert-button" onclick="clearBoards()">Clear Boards</button><button class="button" onclick="showHideCards()">(Hide/Show) Cards</button><button class="button" onclick="showHideCardSelect()">(Hide/Show) Card Select</button>
         </footer>
     </body>
-<script src="index.js"></script> 
-<script src="index-angular.js"></script>  
+    <script src="js/index.js"></script> 
 </html>
