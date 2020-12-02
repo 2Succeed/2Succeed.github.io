@@ -48,8 +48,10 @@ header {
     background-color:  #0076c0;
     flex: 0 0 20px;
     color: white;
-    /* justify-content: center; */
     padding: 4px;
+}
+.slidecontainer{
+    vertical-align: bottom;
 }
 footer {
     
@@ -58,7 +60,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40px;
+    height: 30px;
     
 }
 body > section {
