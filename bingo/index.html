@@ -14,11 +14,10 @@
         <section>
             <main>
                 <h1>Welcome to 2Succeed Bingo Night!</h1>
-                <h3>Select Cards to Play on the Right -></h3>
-                <h3>Make Font Bigger With the Slider on Top ^</h3>
-                <h3>Clear Boards, Hide and Show Cards and or Card Selector Below v</h3>
-                <article id="main">
-                    
+                <article id="cards">
+                    <h3>Cards Selected Will Appear Here</h3>
+                    <h3>Slider On Top Controls Font Size</h3>
+                    <h3>Clear Boards and Show and Hide Cards or Card Selector Below</h3>
 <!-- Card 1 -------------------------------------------------------------------->
                     <table id="bingotable1">
                     <tr class="cardtitle"><th colspan= "5">Card #1</th></tr>
@@ -1401,58 +1400,61 @@
                 </table>
 <!-- End Cards -------------------------------------------------------------------->
                 </article>
-            </main>
-            <aside id="aside">
-                <table id="cardselecttable">
+                <article id="card-select">
+                                <table id="cardselecttable">
                     <tr class="cardtitle"><th colspan= "5">Card Select</th></tr>
                     <tr>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable1');" ><label> Card 1</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable2');" ><label> Card 2</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable3');" ><label> Card 3</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable4');" ><label> Card 4</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable5');" ><label> Card 5</label></td>
+                        <td id="1" checked  onclick="showHideCard('bingotable1',this.id);">Card 1</td>
+                        <td id="2" checked  onclick="showHideCard('bingotable2',this.id);">Card 2</td>
+                        <td id="3" checked  onclick="showHideCard('bingotable3',this.id);">Card 3</td>
+                        <td id="4" checked  onclick="showHideCard('bingotable4',this.id);">Card 4</td>
+                        <td id="5" checked  onclick="showHideCard('bingotable5',this.id);">Card 5</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable6');" ><label> Card 6</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable7');" ><label> Card 7</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable8');" ><label> Card 8</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable9');" ><label> Card 9</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable10');" ><label> Card 10</label></td>
+                        <td id="6" checked  onclick="showHideCard('bingotable6',this.id);">Card 6</td>
+                        <td id="7" checked  onclick="showHideCard('bingotable7',this.id);">Card 7</td>
+                        <td id="8" checked  onclick="showHideCard('bingotable8',this.id);">Card 8</td>
+                        <td id="9" checked  onclick="showHideCard('bingotable9',this.id);">Card 9</td>
+                        <td id="10" checked  onclick="showHideCard('bingotable10',this.id);">Card 10</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable11');" ><label> Card 11</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable12');" ><label> Card 12</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable13');" ><label> Card 13</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable14');" ><label> Card 14</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable15');" ><label> Card 15</label></td>
+                        <td id="11" checked  onclick="showHideCard('bingotable11',this.id);">Card 11</td>
+                        <td id="12" checked  onclick="showHideCard('bingotable12',this.id);">Card 12</td>
+                        <td id="13" checked  onclick="showHideCard('bingotable13',this.id);">Card 13</td>
+                        <td id="14" checked  onclick="showHideCard('bingotable14',this.id);">Card 14</td>
+                        <td id="15" checked  onclick="showHideCard('bingotable15',this.id);">Card 15</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable16');" ><label> Card 16</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable17');" ><label> Card 17</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable18');" ><label> Card 18</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable19');" ><label> Card 19</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable20');" ><label> Card 20</label></td>
+                        <td id="16" checked  onclick="showHideCard('bingotable16',this.id);">Card 16</td>
+                        <td id="17" checked  onclick="showHideCard('bingotable17',this.id);">Card 17</td>
+                        <td id="18" checked  onclick="showHideCard('bingotable18',this.id);">Card 18</td>
+                        <td id="19" checked  onclick="showHideCard('bingotable19',this.id);">Card 19</td>
+                        <td id="20" checked  onclick="showHideCard('bingotable20',this.id);">Card 20</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable21');" ><label> Card 21</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable22');" ><label> Card 22</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable23');" ><label> Card 23</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable24');" ><label> Card 24</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable25');" ><label> Card 25</label></td>
+                        <td id="21" checked  onclick="showHideCard('bingotable21',this.id);">Card 21</td>
+                        <td id="22" checked  onclick="showHideCard('bingotable22',this.id);">Card 22</td>
+                        <td id="23" checked  onclick="showHideCard('bingotable23',this.id);">Card 23</td>
+                        <td id="24" checked  onclick="showHideCard('bingotable24',this.id);">Card 24</td>
+                        <td id="25" checked  onclick="showHideCard('bingotable25',this.id);">Card 25</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable26');" ><label> Card 26</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable27');" ><label> Card 27</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable28');" ><label> Card 28</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable29');" ><label> Card 29</label></td>
-                        <td><input type="checkbox" name="1" id="1" checked  onclick="showHideCard('bingotable30');" ><label> Card 30</label></td>
+                        <td id="26" checked  onclick="showHideCard('bingotable26',this.id);">Card 26</td>
+                        <td id="27" checked  onclick="showHideCard('bingotable27',this.id);">Card 27</td>
+                        <td id="28" checked  onclick="showHideCard('bingotable28',this.id);">Card 28</td>
+                        <td id="29" checked  onclick="showHideCard('bingotable29',this.id);">Card 29</td>
+                        <td id="30" checked  onclick="showHideCard('bingotable30',this.id);">Card 30</td>
                     </tr>
                 </table>
-                
-            </aside>
+                </article>
+            </main>
         </section>
         <footer>
-            <button class="alert-button" onclick="clearBoards()">Clear Boards</button><button class="button" onclick="showHideCards()">(Hide/Show) Cards</button><button class="button" onclick="showHideCardSelect()">(Hide/Show) Card Select</button>
+            <button class="alert-button" onclick="clearBoards()">Clear Boards</button>
+            <button class="alert-button" id="show-cards" onclick="showHideCards()">Show Cards</button>
+            <button class="button" id="hide-cards" onclick="showHideCards()">Hide Cards</button>
+            <button class="alert-button" id="show-card-select" onclick="showHideCardSelect()">Show Card Select</button>
+            <button class="button" id="hide-card-select"onclick="showHideCardSelect()">Hide Card Select</button>
         </footer>
     </body>
     <script src="js/index.js"></script> 

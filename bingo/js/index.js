@@ -1,5 +1,13 @@
 //Initialize all boards with intial values
 function init(){
+    let cards = document.getElementById("cards");
+    let c = document.getElementById("show-cards");
+    let sc = document.getElementById("show-card-select");
+    cards.style.display = "flex";
+    c.style.display = "none";
+    sc.style.display = "none";
+      
+    // Intialize all cells to white  
     let isAllCheck = true;
     let cbarray = document.getElementsByName("1");
     for(let i = 0; i < cbarray.length; i++){
@@ -52,32 +60,27 @@ myRange.oninput = function() {
     document.getElementById('squarefree29').style.fontSize = m;
     document.getElementById('squarefree30').style.fontSize = m;    
 }
-
-window.toggleLeft = function() {
-    var element = document.getElementById("offcanvas-left");
-    element.classList.toggle("hide");
-}
-window.toggleRight = function() {
-    var element = document.getElementById("offcanvas-right");
-    element.classList.toggle("hide");
-}
-
-function showHideCard(bingoid) { 
+// Shows Cards and Highlights Card Number
+function showHideCard(bingoid, id) {   
   let w = document.getElementsByTagName("h1");
   let d = document.getElementsByTagName("h3");
+    
   w[0].style.display = "none";
   for(let i=0; i<d.length; i++){
         d[i].style.display = "none";   
   }     
 
   let x = document.getElementById(bingoid);
+  let y = document.getElementById(id);
   if (x.style.display == "flex") {
     x.style.display = "none";
+    y.style.backgroundColor = "white";
   } else {
     x.style.display = "flex";
+    y.style.backgroundColor = "#808080";
   }
 }
-
+// Will Highlight Cell of Each Board
 function cc(id) {
   let x = document.getElementById(id);
   if (x.style.backgroundColor === "white") {
@@ -87,75 +90,88 @@ function cc(id) {
     x.style.backgroundColor = "white";
   }
 }
-
+//Shows or Hides Card Select
 function showHideCardSelect() { 
-  let x = document.getElementById("aside");
+  let x = document.getElementById("card-select");
+  let sc = document.getElementById("show-card-select");
+  let hc = document.getElementById("hide-card-select");    
+      
   if (x.style.display === "none") {
     x.style.display = "flex";
+    hc.style.display = "inline-block";  
+    sc.style.display = "none";  
   } else {
     x.style.display = "none";
+    hc.style.display = "none";  
+    sc.style.display = "inline-block";        
+      
   }
 }
-
+// Shows and Hides Cards
 function showHideCards() { 
-  let x = document.getElementById("main");
+  let x = document.getElementById("cards");
+  let sc = document.getElementById("show-cards");
+  let hc = document.getElementById("hide-cards"); 
+    
   if (x.style.display === "none") {
     x.style.display = "flex";
+    hc.style.display = "inline-block";  
+    sc.style.display = "none"; 
   } else {
     x.style.display = "none";
+    hc.style.display = "none";  
+    sc.style.display = "inline-block"; 
   }
 }
-
+//Helper to Keep Card Select Greyed.
+function keep(id){
+    switch(id){
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '10':
+            case '11':
+            case '12':
+            case '13':
+            case '14':
+            case '15':
+            case '16':
+            case '17':
+            case '18':
+            case '19':
+            case '20':
+            case '21':
+            case '22':
+            case '23':
+            case '24':
+            case '25':
+            case '26':
+            case '27':
+            case '28':
+            case '29':
+            case '30':
+            return false;
+            break;
+        default:
+            return true;
+    }
+}
+// Clears All Highlights of Boards
 function clearBoards(){
     let x = document.getElementsByTagName("td");
     for(let i=0; i<x.length; i++){
-        x[i].style.backgroundColor = "white";
+        if(keep(x[i].id)){
+            x[i].style.backgroundColor = "white";
+        }
     }
 }
 
-
-/*$( "#slider" ).slider({
-    range: "max",
-    min: 10,
-    max: 80,
-    value: 12,
-    slide: function( event, ui ) {
-      $( "tr" ).css( { fontSize: ui.value} );
-      $( "tr" ).css( { textAlign: "center"} );
-      $( "td" ).css( { fontSize: ui.value} );
-      $( "td" ).css( { textAlign: "center"} );
-      $( "#squarefree1" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree2" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree3" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree4" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree5" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree6" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree7" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree8" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree9" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree10" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree11" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree12" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree13" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree14" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree15" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree16" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree17" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree18" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree19" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree20" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree21" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree22" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree23" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree24" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree25" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree26" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree27" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree28" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree29" ).css( {fontSize: ui.value/2 });
-      $( "#squarefree30" ).css( {fontSize: ui.value/2 });
-    }
-  });*/
 
 
 

@@ -13,36 +13,6 @@ body {
 h1 {
     font-size: 2.3em;
 }
-#offcanvas-left,
-#offcanvas-right {
-    flex: 0 0 280px;
-    background-color: #111;
-    color: white;
-    transition-duration: .5s;
-}
-#offcanvas-left.hide {
-    margin-left: -280px;
-}
-#offcanvas-right.hide {
-    margin-right: -280px;
-}
-.togglebar {
-    background-color: #232323;
-    flex: 0 0 50px;
-}
-.toggle i {
-    height: 80px;
-    font-size: 1.4em;
-    width: 100%;
-    color: blueviolet ;
-    display: flex;   
-    align-items: center;
-    justify-content: center;
-    background-color: #111
-}
-.toggle i:hover {
-    color: gold;
-}
 
 header {
     background-color:  #0076c0;
@@ -78,10 +48,8 @@ section > main {
     padding: 20px;
     overflow: auto;
 }
-aside {
-    background-color: #DBCEA5;
-    display: flex;
-    overflow: auto;
+#cards{
+    display: none;
 }
 article {
     border-radius: 5px;
@@ -119,8 +87,6 @@ span {
     text-align: center;
 }
 
-#offcanvas-left,
-#offcanvas-right,
 header,
 body > section,
 footer,
@@ -154,21 +120,18 @@ main article {
   width: 100%;
 }
 
-input[type=checkbox] {
-    transform: scale(2);
-}
-
 .button {
   background-color:  #60C659;
-  border: 1px;
+  color: white;
+  border: 2px;
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 10px 10px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .alert-button {
@@ -182,7 +145,7 @@ input[type=checkbox] {
   font-size: 18px;
   margin: 10px 10px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 #cardselecttable {
