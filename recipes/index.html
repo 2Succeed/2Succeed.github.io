@@ -40,10 +40,10 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Grocery List <button class="arrowup" ng-click="email()">Email List</button></p>
+                <p class="lead"><h1>Grocery List </h1><button class="arrowup" ng-click="email()">Email List</button></p>
                 <hr>
                     <ul style="list-style-type:none;">
-                        <li ng-repeat="u in myGroceries track by $index"; let indexOfelement=index><button ng-click="removeFromList($index)">-</button> {{u}}</li>
+                        <li ng-repeat="u in myGroceries track by $index"; let indexOfelement=index><button class="item-button" ng-click="removeFromList($index)">-</button> {{u}}</li>
                     </ul>
                 <hr>
                   
