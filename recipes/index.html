@@ -45,6 +45,7 @@
                     <ul style="list-style-type:none;">
                         <li ng-repeat="u in myGroceries track by $index"; let indexOfelement=index><button class="item-button" ng-click="removeFromList($index)">-</button> {{u}}</li>
                     </ul>
+                    <button ng-if="isList" ng-click="clearList()">Clear List</button>
                 <hr>
                   
             </div>
@@ -57,7 +58,7 @@
                             <img src="{{x.link}}" alt="{{ x.name }}">
                             <div class="caption">
                                 <h4 class="pull-right"><button ng-click="addToList(x.name, x.ingredients)">Add</button></h4>
-                                <h4><button class="arrowup" ng-click="emailRecipe(x.name, x.ingredients, x.recipes)">&#8679;</button> {{ x.name }}</h4>
+                                <h4><button class="arrowup" ng-click="emailRecipe(x.name, x.ingredients, x.recipes)">&#11165;</button> {{ x.name }}</h4>
                                 <span>{{ x.description }}</span>
                             </div>
                             <div class="ratings">

@@ -47,6 +47,10 @@ body {
 
 .arrowup {
     border-radius: 8px;
+    background: transparent;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .ratings {
