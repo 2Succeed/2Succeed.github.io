@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Reed's Recipes</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="myApp" ng-controller="recipeCtrl">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="search-wrap"><input type="text" ng-model="meal" class="form-control" placeholder="Search" /></div>    
+    </nav>
+
+    <!-- Page Content -->
+    <a name="shop"></a> 
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead">Grocery List <button class="arrowup" ng-click="email()">Email List</button></p>
+                <hr>
+                    <ul style="list-style-type:none;">
+                        <li ng-repeat="u in myGroceries track by $index"; let indexOfelement=index><button ng-click="removeFromList($index)">-</button> {{u}}</li>
+                    </ul>
+                <hr>
+                  
+            </div>
+            <div class="col-md-9">
+                <!-- Page Content -->
+                <div class="row">
+
+                    <div class="col-sm-4 col-lg-4 col-md-4" ng-repeat="x in meals | filter:meal">
+                        <div class="thumbnail">
+                            <img src="{{x.link}}" alt="{{ x.name }}">
+                            <div class="caption">
+                                <h4 class="pull-right"><button ng-click="addToList(x.name, x.ingredients)">Add</button></h4>
+                                <h4><button class="arrowup" ng-click="emailRecipe(x.name, x.ingredients, x.recipes)">&#8679;</button> {{ x.name }}</h4>
+                                <span>{{ x.description }}</span>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right"><button type="button" data-toggle="modal" data-target="#{{x.id}}{{x.id}}">Ingredients</button><button type="button" data-toggle="modal" data-target="#{{x.id}}">Directions</button></p>
+                                <p>
+                                    <span ng-repeat="rate in x.rating" class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Recipe Modal -->
+                            <div class="modal fade" id="{{x.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h4 class="modal-title" id="exampleModalLongTitle">{{x.name}} Recipe</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <ol><li ng-repeat="i in x.recipes">{{ i }}</li></ol>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        <!-- End of Modal -->  
+                        <!-- Ingredient Modal -->
+                            <div class="modal fade" id="{{x.id}}{{x.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h4 class="modal-title" id="exampleModalLongTitle">{{x.name}} Ingredients</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <ul><li ng-repeat="i in x.ingredients">{{ i }}</li></ul>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        <!-- End of Modal -->   
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container of items -->
+    <a name="contact"></a> 
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Reed's Recipes 2020</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="js/recipes.js"></script>
+
+</body>
+
+</html>
