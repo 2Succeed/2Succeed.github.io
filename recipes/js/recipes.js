@@ -45,7 +45,7 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          rating:[1,2,3,4,5]},
         {id:6, 
          name:"Cane Cookies", 
-         description:"[Desert] Oma's Recipe", 
+         description:"[Dessert] Oma's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-8syuuC1dV4M%2FUp8ur7e1K6I%2FAAAAAAAAK1U%2FbViA6A0Xtsc%2Fs1600%2Fcandy%2Bcane%2Bcookies-%2Bsimple%2Bliving%2Band%2Beating.jpg&f=1&nofb=1",
          ingredients:["shortening (1/2 cup)","butter (1/2 cup)","eggs (1)","almond extract (1.5 teaspoon)","vanilla (1 teaspoon)","flour (2.5 cups)","salt (teaspoon)"], 
          recipes:["Set Oven to 350","make batter?","separate and Color half of batter","bake 8-12 minutes","once cooled roll them in powdered sugar"], 
