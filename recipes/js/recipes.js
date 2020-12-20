@@ -42,21 +42,24 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          link: "https://crockpotladies.com/wp-content/uploads/2016/04/Crock-Pot-Chicken-Ranch-Tacos-5.jpg",
          ingredients:["chicken breasts (1.5 pounds)","chicken broth (2 cups)","taco seasoning (1 pack)","ranch seasoning (1 pack)","torillas (6 flour or corn)","cheese (toppings)","sour cream (toppings)"], 
          recipes:["Place the chicken into the slow cooker. In a bowl, whisk together the chicken broth, ranch seasoning mix, and taco seasoning. Pour the mixture over the chicken.","Cook the chicken on low for about 3 1/2 hours or 1 1/2 hours on high in the slow cooker. If using a pressure cooker (Instant Pot), than cook on high pressure for 25 minutes and do a quick release when done. Remove the chicken and shred with a fork. Place the shredded chicken back into the slow cooker or pressure cooker and let sit for 10-15 minutes before serving.","Use a slotted spoon and spoon the chicken onto a tortilla and top with desired toppings."], 
-         rating:[1,2,3,4,5]},
+         rating:[1,2,3,4,5]
+        },
         {id:6, 
          name:"Chicken Spaghetti", 
          description:"[Dinner] Kim's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.z6i2NhO0QNQAW3LjIIX-sAHaE7%26pid%3DApi&f=1",
          ingredients:["pasta (8 ounces)","chicken (2 cups)","cream of mushroom (1 can)","cream of chicken (1 can)","rotel (1 can)","cheese (toppings)","sour cream (toppings)"], 
-         recipes:["Preheat oven to 350 degrees.","Boil pasta as package directs and drain. Mix all other ingredients (except cheese), add to cooked pasta and put in a 9" x 13" baking dish. Cover with foil and bake 30 minutes or until hot and bubbly. Sprinkle with your choice of cheese and return to oven to melt."], 
-         rating:[1,2,3,4]},
+         recipes:["preheat oven to 350 degrees.","boil pasta as package directs and drain. mix all other ingredients, add to cooked pasta and put in a 9x13 baking dish. cover with foil and bake 30 minutes or until hot and bubbly. sprinkle with your choice of cheese and return to oven to melt."], 
+         rating:[1,2,3,4]
+        },
         {id:7, 
          name:"Cane Cookies", 
          description:"[Dessert] Oma's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-8syuuC1dV4M%2FUp8ur7e1K6I%2FAAAAAAAAK1U%2FbViA6A0Xtsc%2Fs1600%2Fcandy%2Bcane%2Bcookies-%2Bsimple%2Bliving%2Band%2Beating.jpg&f=1&nofb=1",
          ingredients:["shortening (1/2 cup)","butter (1/2 cup)","eggs (1)","almond extract (1.5 teaspoon)","vanilla (1 teaspoon)","flour (2.5 cups)","salt (teaspoon)"], 
          recipes:["Set Oven to 350","make batter?","separate and Color half of batter","bake 8-12 minutes","once cooled roll them in powdered sugar"], 
-         rating:[1,2,3,4,5]},
+         rating:[1,2,3,4,5]
+        },
     ];
     
     $scope.addToList = function(name, item){
