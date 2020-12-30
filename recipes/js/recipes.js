@@ -53,6 +53,14 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          rating:[1,2,3,4]
         },
         {id:7, 
+         name:"Lasagna", 
+         description:"[Dinner] Dianne's Recipe", 
+         link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.eUOZvmg2rdczHFdcao1TpAAAAA%26pid%3DApi&f=1",
+         ingredients:["tomato paste (12 oz)","tomato paste (6 oz)","onion salt","garlic salt","oregano leaves","sage","cottage cheese (2 lb)","eggs (4)","garlic (1 tsp)","mozzerella shredded cheese (1 cup)","medium cheddar shredded cheese (1 cup)","jack/romano shredded cheese (1 cup)","beef (1-2 lbs)"],
+         recipes:["Sauce - add water to the consistency you like - usually 1 can water for each can of paste mix tomato paste 12 oz, tomato paste 6 oz, 1 tsp onion salt, 1 tsp garlic salt, 1 tsp oregano leaves, and 1 tsp sage","Filling - cook meat and mix with 2 lb cottage cheese, 4 eggs, 1 tsp onion salt, 1 tsp garlic salt, 1 tsp oregano leaves, 1 tsp sage, 1 tsp minced garlic, 3 cups shredded cheese.","Layers - tomato sauce in bottom of 9x13 pan - enough so you can turn pans on side and tomato sauce cover it as well noodles 1/2 cottage cheese mixture - spread out noodles 1/2 cottage cheese mixture - spread out noodles tomato sauce - shake pan so it is flat and some sauce runs down the sides cheese bake 375 degrees 1 hour"], 
+         rating:[1,2,3,4,5]
+        },
+        {id:8, 
          name:"Cane Cookies", 
          description:"[Dessert] Oma's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-8syuuC1dV4M%2FUp8ur7e1K6I%2FAAAAAAAAK1U%2FbViA6A0Xtsc%2Fs1600%2Fcandy%2Bcane%2Bcookies-%2Bsimple%2Bliving%2Band%2Beating.jpg&f=1&nofb=1",
