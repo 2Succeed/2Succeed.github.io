@@ -1,5 +1,5 @@
 angular.module('myApp', []).controller('recipeCtrl', function($scope) {
-    $scope.myGroceries = ["apples (6)","bananas (10)","bread (2)","milk (1 gallon)","butter (1 pack)","eggs (1 dozen)","lunch meat (rb or turkey)"];
+    $scope.myGroceries = ["apples (6)","bananas (10)","onion (1)","bread (2)","milk (1 gallon)","butter (1 pack)","eggs (1 dozen)","lunch meat (rb or turkey)"];
     $scope.addedMeals = [];
     $scope.isList = true;
     
@@ -61,6 +61,14 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          rating:[1,2,3,4,5]
         },
         {id:8, 
+         name:"Tater Tot Casserole", 
+         description:"[Dinner] Kim's Recipe", 
+         link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdz2k5jx87b7zc.cloudfront.net%2Fwp-content%2Fuploads%2F2014%2F12%2F15175632%2FJohn-Wayne-Tater-Tot-Casserole.jpg&f=1&nofb=1",
+         ingredients:["ground beef (1 pound)","onion (1/2 chopped)","cream of chicken soup (10.5 oz can)","tator tots (16oz bag)","cheddar shredded cheese (1 cup)","salt","pepper"],
+         recipes:["Preheat oven to 375 degrees.","Brown ground beef. season with salt & pepper.","In a casserole dish, combine ground beef mixture and cream soup.","Top mixture with tater tots.","Bake , uncovered, for 30-40 minutes till bubbly and Tots are golden brown.","Remove from oven & top with cheese, return to oven until melted.","Enjoy!"], 
+         rating:[1,2,3,4,5]
+        },
+        {id:9, 
          name:"Cane Cookies", 
          description:"[Dessert] Oma's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-8syuuC1dV4M%2FUp8ur7e1K6I%2FAAAAAAAAK1U%2FbViA6A0Xtsc%2Fs1600%2Fcandy%2Bcane%2Bcookies-%2Bsimple%2Bliving%2Band%2Beating.jpg&f=1&nofb=1",
