@@ -69,6 +69,14 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          rating:[1,2,3,4,5]
         },
         {id:9, 
+         name:"Garlic Potatoes", 
+         description:"[Dinner] Kim's Recipe",
+         link:"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2003/9/29/0/ig1a07_roasted_potatoes.jpg.rend.hgtvcom.826.620.suffix/1446840363593.jpeg",
+         ingredients:["red potatoes (3 pounds)","olive oil (1/4 cup)","salt (1.5 teaspoons)","pepper (1 teaspoon)","garlic (6 gloves)","parsely (2 tablespoons)"],
+         recipes:["Preheat the oven to 400 degrees F.","Cut the potatoes in half or quarters and place in a bowl with the olive oil, salt, pepper, and garlic; toss until the potatoes are well coated. Transfer the potatoes to a sheet pan and spread out into 1 layer. Roast in the oven for 45 minutes to 1 hour or until browned and crisp. Flip twice with a spatula during cooking in order to ensure even browning.","Remove the potatoes from the oven, toss with parsley, season to taste, and serve hot."], 
+         rating:[1,2,3,4]
+        },
+        {id:10, 
          name:"Cane Cookies", 
          description:"[Dessert] Oma's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-8syuuC1dV4M%2FUp8ur7e1K6I%2FAAAAAAAAK1U%2FbViA6A0Xtsc%2Fs1600%2Fcandy%2Bcane%2Bcookies-%2Bsimple%2Bliving%2Band%2Beating.jpg&f=1&nofb=1",
