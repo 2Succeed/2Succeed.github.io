@@ -4,15 +4,15 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
     $scope.isList = true;
     
     $scope.meals = [
-        {id:1, 
+        {id:01, 
          name:"Taco Tots", 
          description:"[Dinner] Doug's Recipe",
          link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdishnthekitchen.com%2Fwp-content%2Fuploads%2F2019%2F02%2Ftacocasserole4-1460x973.jpg&f=1&nofb=1",
-         ingredients:["ground beef (1 pound)","garlic (2 cloves)","taco seasoning (1 pack)","enchilada sauce (1 can)","corn (1 can)","green pepper (1)","onion (1)","black beans (1 can)","cheddar cheese (2 bags)","tator tots (1 bag)","salsa (.5 jar)","shredded lettuce (1 bag)","sour cream (optional)","tomato (1 (optional))"], 
+         ingredients:["ground beef (1 pound)","garlic (2 cloves)","taco seasoning (1 pack)","enchilada sauce (1 19 oz can)","corn (1 can)","green pepper (1)","onion (1)","black beans (1 can)","cheddar cheese (2 bags)","tator tots (1 bag)","salsa (.5 jar)","shredded lettuce (1 bag)","sour cream (optional)","tomato (1 (optional))"], 
          recipes:["Preheat oven to 400 degrees","Brown ground beef, onion and garlic over medium high until no pink remains. Drain any fat.","Stir in taco seasoning, 1/2 cup water, 2/3 cup enchilada sauce, corn, bell pepper and beans. Cook until thickened (about 5 minutes)","Pour beef mixture into a 9×13 pan. Sprinkle with 1 1/2 cups cheese and arrange tater tots on top.","Bake 30 minutes. Combine salsa and remaining 1/3 cup enchilada sauce. Spread over tater tots and top with remaining cheese.","Bake an additional 10 minutes or until cheese is melted and bubbly.","Serve with desired toppings"], 
          rating:[1,2,3,4,5]
         },
-        {id:2,
+        {id:02,
          name:"Enchiladas", 
          description:"[Dinner] Doug's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yxeb639dr1l5PUOpynE1oAHaEs%26pid%3DApi&f=1",
@@ -20,7 +20,7 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          recipes:["Preheat oven to 350°F.","In large sauté pan, heat oil over medium-high heat. Add onion and sauté for 3 minutes, stirring occasionally.  Add diced chicken and green chiles, and season with a generous pinch of salt and pepper.  Sauté the mixture for 6-8 minutes, stirring occasionally, or until the chicken is cooked through.  Add in the beans and stir until evenly combined.  Remove pan from heat and set aside.","To assemble the enchiladas, set up an assembly line including: tortillas, enchilada sauce, chicken mixture, and cheese. Lay out a tortilla, and spread two tablespoons of sauce over the surface of the tortilla.  Add a generous spoonful of the chicken mixture in a line down the center of the tortilla, then sprinkle with 1/3 cup cheese. Roll up tortilla and place in a greased 9 x 13-inch baking dish.","Assemble the remaining enchiladas.  Then spread any remaining sauce evenly over the top of the enchiladas, followed by any extra cheese.","Bake uncovered for 20 minutes, until the enchiladas are cooked through and the tortillas are slightly crispy on the outside.  Remove pan from the oven and serve the enchiladas while they’re nice and warm, garnished with lots of toppings.",""], 
          rating:[1,2,3,4]
         },
-        {id:3,
+        {id:03,
          name:"Meat Loaf", 
          description:"[Dinner] Kim's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.simplemost.com%2Fwp-content%2Fuploads%2F2017%2F12%2Fmeatloaf.jpg&f=1&nofb=1",
@@ -28,7 +28,7 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          recipes:["Set Oven to 350","In a medium bowl combine eggs and milk; stir in bread crumbs, onion, parsley, salt, sage, and pepper. Add ground meat; mix lightly. Lightly pat mixture into an 8x4x2-inch loaf pan.","Bake in a 350 degree F oven for 1 to 1-1/4 hours or until internal temperature registers 160 degrees F. Spoon off fat. In a bowl combine ketchup, sugar, and mustard; spread over meat. Bake for 10 minutes more. Let stand for 10 minutes before cutting into eight slices.","Makes 8 servings"], 
          rating:[1,2,3,4]
         },
-        {id:4, 
+        {id:04, 
          name:"Waffle Casserole", 
          description:"[Breakfast] [Dinner] Kim's Recipe", 
          link: "https://img.sndimg.com/food/image/upload/c_thumb,q_80,w_412,h_232/v1/img/recipes/11/29/54/piclfuIpc.jpg",
@@ -36,7 +36,7 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          recipes:["Preheat oven to 350 degrees.","In a large skillet cook sausage until brown, drain off fat.","Arrange 3 of the waffles in a 2 quart rectangular baking dish.","Top with half the sausage and about 1/3 cup of cheese.","Repeat layers.","In a large bowl beat eggs with a fork; stir in milk, mustard and pepper.","Pour over layers in baking dish","Cover and chill for at least 4 hours or up to 24 hours.","Bake dish uncovered for 50-60 minutes or until a knife inserted near center comes out clean.","Sprinkle with remaining cheese.","Let stand for 10 minutes before serving.","If desired, serve with maple syrup."], 
          rating:[1,2,3,4]
         },
-        {id:5, 
+        {id:05, 
          name:"Chicken Tacos", 
          description:"[Dinner] Kim's Recipe", 
          link: "https://crockpotladies.com/wp-content/uploads/2016/04/Crock-Pot-Chicken-Ranch-Tacos-5.jpg",
@@ -44,7 +44,7 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          recipes:["Place the chicken into the slow cooker. In a bowl, whisk together the chicken broth, ranch seasoning mix, and taco seasoning. Pour the mixture over the chicken.","Cook the chicken on low for about 3 1/2 hours or 1 1/2 hours on high in the slow cooker. If using a pressure cooker (Instant Pot), than cook on high pressure for 25 minutes and do a quick release when done. Remove the chicken and shred with a fork. Place the shredded chicken back into the slow cooker or pressure cooker and let sit for 10-15 minutes before serving.","Use a slotted spoon and spoon the chicken onto a tortilla and top with desired toppings."], 
          rating:[1,2,3,4,5]
         },
-        {id:6, 
+        {id:06, 
          name:"Chicken Spaghetti", 
          description:"[Dinner] Kim's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.z6i2NhO0QNQAW3LjIIX-sAHaE7%26pid%3DApi&f=1",
@@ -52,7 +52,7 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          recipes:["preheat oven to 350 degrees.","boil pasta as package directs and drain. mix all other ingredients, add to cooked pasta and put in a 9x13 baking dish. cover with foil and bake 30 minutes or until hot and bubbly. sprinkle with your choice of cheese and return to oven to melt."], 
          rating:[1,2,3,4]
         },
-        {id:7, 
+        {id:07, 
          name:"Lasagna", 
          description:"[Dinner] Dianne's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.eUOZvmg2rdczHFdcao1TpAAAAA%26pid%3DApi&f=1",
@@ -60,7 +60,7 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          recipes:["Sauce - add water to the consistency you like - usually 1 can water for each can of paste mix tomato paste 12 oz, tomato paste 6 oz, 1 tsp onion salt, 1 tsp garlic salt, 1 tsp oregano leaves, and 1 tsp sage","Filling - cook meat and mix with 2 lb cottage cheese, 4 eggs, 1 tsp onion salt, 1 tsp garlic salt, 1 tsp oregano leaves, 1 tsp sage, 1 tsp minced garlic, 3 cups shredded cheese.","Layers - tomato sauce in bottom of 9x13 pan - enough so you can turn pans on side and tomato sauce cover it as well noodles 1/2 cottage cheese mixture - spread out noodles 1/2 cottage cheese mixture - spread out noodles tomato sauce - shake pan so it is flat and some sauce runs down the sides cheese bake 375 degrees 1 hour"], 
          rating:[1,2,3,4,5]
         },
-        {id:8, 
+        {id:08, 
          name:"Tater Tot Casserole", 
          description:"[Dinner] Kim's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdz2k5jx87b7zc.cloudfront.net%2Fwp-content%2Fuploads%2F2014%2F12%2F15175632%2FJohn-Wayne-Tater-Tot-Casserole.jpg&f=1&nofb=1",
@@ -68,7 +68,7 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          recipes:["Preheat oven to 375 degrees.","Brown ground beef. season with salt & pepper.","In a casserole dish, combine ground beef mixture and cream soup.","Top mixture with tater tots.","Bake , uncovered, for 30-40 minutes till bubbly and Tots are golden brown.","Remove from oven & top with cheese, return to oven until melted.","Enjoy!"], 
          rating:[1,2,3,4,5]
         },
-        {id:9, 
+        {id:09, 
          name:"Garlic Potatoes", 
          description:"[Dinner] Kim's Recipe",
          link:"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2003/9/29/0/ig1a07_roasted_potatoes.jpg.rend.hgtvcom.826.620.suffix/1446840363593.jpeg",
@@ -77,6 +77,22 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          rating:[1,2,3,4]
         },
         {id:10, 
+         name:"Hobo Burgers", 
+         description:"[Dinner] Kim's Recipe",
+         link:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.rebelmouse.io%2FeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xODE0ODAxNi9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTYyNTY4NjgyMH0.JrMf4aHl_C5jQRSvKld7nLhjh0Us61vsWWHfN76bi1g%2Fimg.jpg%3Fwidth%3D1200%26coordinates%3D0%252C380%252C0%252C380%26height%3D600&f=1&nofb=1",
+         ingredients:["Hamburger (1 pound)","baby potatoes (4)","eggs (1)","baby carrots (1 pound bag)","cheese (4 sliced)","galic powder (1/2 tsp)","salt (1 1/2 tsp)","pepper (1/4 tsp)","foil"],
+         recipes:["Preheat grill to 350 degrees.","In a bowl combine the hamburger, egg, seasoning salt and garlic powder. Form into four patties, set aside.","In a large bowl combine the remaining ingredients except cheese slices. Mix until combined.","Spray four 12''by 18'' pieces of foil with nonstick spray. Place 1/4 of the vegetables in the center of the foil. Top with 1 beef patty. Seal packets and place beef side up on the grill. ","Grill for 35-45 minutes or until potatoes and carrots are tender and the ground beef reaches 160 degrees F. I flipped mine over during the last 20 minutes of cooking.","When the packets are done open the top, hamburger patty facing up, and add a piece of cheese. Close grill cover and grill 2-3 minutes or until cheese is melted."], 
+         rating:[1,2,3,4,5]
+        },
+        {id:12, 
+         name:"BBQ Chicken", 
+         description:"[Dinner] Kim's Recipe",
+         link:"https://i2.wp.com/thefrugalgirls.com/wp-content/uploads/2015/07/Crockpot-BBQ-Shredded-Chicken.jpg?w=597&ssl=1",
+         ingredients:["bopeless chicken (3 pounds)","sweet rays bbq sauce (18 oz)","brown sugar (1/2 cup)"],
+         recipes:["Cook chicken in crockpot on HIGH for 3 hours or LOW for 6 hours covered","After 3 hours on HIGH or 6 hours on LOW, drain juices from crockpot.","Remove chicken and shred with 2 forks, then transfer back to crockpot.","In bowl, mix together entire contents of BBQ sauce bottle and brown sugar.","Pour sauce mixture over the chicken, stir well, and cook on high for 30 more minutes covered, or until done. Serve on buns and ENJOY!"], 
+         rating:[1,2,3,4,5]
+        },
+        {id:13, 
          name:"Cane Cookies", 
          description:"[Dessert] Oma's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-8syuuC1dV4M%2FUp8ur7e1K6I%2FAAAAAAAAK1U%2FbViA6A0Xtsc%2Fs1600%2Fcandy%2Bcane%2Bcookies-%2Bsimple%2Bliving%2Band%2Beating.jpg&f=1&nofb=1",
