@@ -88,7 +88,7 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          name:"BBQ Chicken", 
          description:"[Dinner] Kim's Recipe",
          link:"https://i2.wp.com/thefrugalgirls.com/wp-content/uploads/2015/07/Crockpot-BBQ-Shredded-Chicken.jpg?w=597&ssl=1",
-         ingredients:["bopeless chicken (3 pounds)","sweet rays bbq sauce (18 oz)","brown sugar (1/2 cup)"],
+         ingredients:["boneless chicken (3 pounds)","sweet rays bbq sauce (18 oz)","brown sugar (1/2 cup)"],
          recipes:["Cook chicken in crockpot on HIGH for 3 hours or LOW for 6 hours covered","After 3 hours on HIGH or 6 hours on LOW, drain juices from crockpot.","Remove chicken and shred with 2 forks, then transfer back to crockpot.","In bowl, mix together entire contents of BBQ sauce bottle and brown sugar.","Pour sauce mixture over the chicken, stir well, and cook on high for 30 more minutes covered, or until done. Serve on buns and ENJOY!"], 
          rating:[1,2,3,4,5]
         },
