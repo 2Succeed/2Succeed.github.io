@@ -93,6 +93,22 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          rating:[1,2,3,4,5]
         },
         {id:13, 
+         name:"Burritos", 
+         description:"[Dinner] Kim's Recipe",
+         link:"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-D3bBux0kVkM%2FVPr2ab3fDTI%2FAAAAAAAAB0Y%2FFgVduB249AI%2Fs1600%2FFrenchs_Cheeseburger_Burrito.jpg&f=1&nofb=1",
+         ingredients:["tortillas (5)","ground beef (1 pound)","taco seasoning","chili beans (16 oz can)","pinto beans (16 oz can)","rice (1 cup)","cheddar cheese (1 bag)","shredded lettuce (1 bag)","rotel (1 can)","taco sauce","sour cream"],
+         recipes:["Cook rice","Cook beef and add taco seasoning","Warm Pinto and Chili beans in pot","Add rice, beef, beans and some cheese together in two tortillas","Cover two with cheese and microwave for 2 minutes","serve with lettuce, rotel and sour cream"], 
+         rating:[1,2,3,4]
+        },
+        {id:14, 
+         name:"Grilled Cheese", 
+         description:"[Dinner] Kim's Recipe",
+         link:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tasteofhome.com%2Fwp-content%2Fuploads%2F2017%2F11%2Fshutterstock_645742051-1024x683.jpg&f=1&nofb=1",
+         ingredients:["bread (12 slices)","sliced cheese (10)","butter","tomatoes (1 optional)","tomato soup (1 can)"],
+         recipes:["Assemble sandwich with cheese slice (one or two) sliced tomato (optional)","Butter outside of each slice of bread","Cook for 90 seconds on each side on stove med-high heat","Mix and warm soup","Serve and enjoy"], 
+         rating:[1,2,3,4]
+        },
+        {id:15, 
          name:"Cane Cookies", 
          description:"[Dessert] Oma's Recipe", 
          link: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-8syuuC1dV4M%2FUp8ur7e1K6I%2FAAAAAAAAK1U%2FbViA6A0Xtsc%2Fs1600%2Fcandy%2Bcane%2Bcookies-%2Bsimple%2Bliving%2Band%2Beating.jpg&f=1&nofb=1",
