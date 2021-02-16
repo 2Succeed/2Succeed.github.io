@@ -58,7 +58,17 @@ myRange.oninput = function() {
     document.getElementById('squarefree27').style.fontSize = m;
     document.getElementById('squarefree28').style.fontSize = m;
     document.getElementById('squarefree29').style.fontSize = m;
-    document.getElementById('squarefree30').style.fontSize = m;    
+    document.getElementById('squarefree30').style.fontSize = m;
+    document.getElementById('squarefree31').style.fontSize = m;
+    document.getElementById('squarefree32').style.fontSize = m;
+    document.getElementById('squarefree33').style.fontSize = m;
+    document.getElementById('squarefree34').style.fontSize = m;
+    document.getElementById('squarefree35').style.fontSize = m;
+    document.getElementById('squarefree36').style.fontSize = m;
+    document.getElementById('squarefree37').style.fontSize = m;
+    document.getElementById('squarefree38').style.fontSize = m;
+    document.getElementById('squarefree39').style.fontSize = m;
+    document.getElementById('squarefree40').style.fontSize = m;
 }
 // Shows Cards and Highlights Card Number
 function showHideCard(bingoid, id) {   
@@ -156,6 +166,16 @@ function keep(id){
             case '28':
             case '29':
             case '30':
+            case '31':
+            case '32':
+            case '33':
+            case '34':
+            case '35':
+            case '36':
+            case '37':
+            case '38':
+            case '39':
+            case '40':
             return false;
             break;
         default:
