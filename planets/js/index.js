@@ -1,7 +1,6 @@
 // index.js
-//document.write("Hi I'm Working");
 
-const mercury = {
+/*const mercury = {
     diameter:4879, 
     distance:57.9,
     image: "mercury.jpg"
@@ -24,4 +23,39 @@ for(let i=0; i<((venus.distance/10 - mercury.distance/10)); i++){
 }
 
 document.write('<img src="images/venus.jpg" width="'+venus.diameter/1000+'">');
+*/
+
+let num = 9;
+let str = "String";
+let bool = true;
+
+document.write("<br>");
+document.write(typeof bool);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

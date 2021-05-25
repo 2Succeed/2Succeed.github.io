@@ -6,6 +6,7 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color:#60AFDD;
 }
 .search-wrap{
      padding-top: 7px;
@@ -23,7 +24,7 @@ body {
 }
 
 .carousel-holder {
-    margin-bottom: 30px;
+    margin-bottom: 30px;   
 }
 
 .carousel-control,
@@ -38,11 +39,12 @@ body {
 
 .caption h4 {
     white-space: nowrap;
+    color:#7A1E99;
 }
-
+c
 .thumbnail img {
     height: 150px;
-    /*width: 100%;*/
+    border-radius: 8px;
 }
 
 .arrowup {
@@ -51,23 +53,61 @@ body {
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background-color: #F9E046;
+    color: black;
+}
+
+.arrowup-sp {
+    background: transparent;
+    font-size: 15px;
+    line-height: 10px;
+    padding:0;
+    margin:0;
+    background-color: #fff;
+    color: black;
+}
+
+.tog {
+    background-color: #60C659;
+    border-radius: 8px;
+    color: black;
 }
 
 .ratings {
     padding-right: 10px;
     padding-left: 10px;
-    color: #d17581;
+    color: #0076c0;
 }
 
 .thumbnail {
     padding: 0;
+    border-radius: 8px;
+    background-color: #DBCEA5;
+    outline: 2px dashed #7A1E99;
 }
 
+.card-image {
+    height:80%;
+    width: 90%;
+    border-radius: 50%;
+    padding:5px;
+}
 .thumbnail .caption-full {
     padding: 9px;
     color: #333;
 }
 
+.modal-title {
+    color: #7A1E99;
+    background-color: #60AFDD;
+    text-align: center;
+    border-radius: 8px;
+}
+
 footer {
     margin: 50px 0;
+}
+
+h1 {
+    color: #7A1E99;
 }
