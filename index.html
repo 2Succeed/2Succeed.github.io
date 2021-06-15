@@ -1,55 +1,35 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <title>2Succeed Online Resources</title>
-    </head>
-    <body id="home" class="open-left">
-        <h1>Hi How are you?</h1>
-        <div id="offcanvas-left" class="hide">
-            <ul>
-                <li><a href="bingo/index.html" >Bingo</a></li>
-                <li><a href="trivia/index.html" >Trivia</a></li>
-                <li><a href="#" >Item 1 </a></li>
-            </ul>
-        </div>
-        <div class="togglebar">
-            <!-- adds the class of hide to .offcanvas.left -->
-            <div class="toggle" onclick="toggleLeft()">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
-        <div class="center">
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="bingo/index.html" >Bingo</a></li>
-                        <li><a href="trivia/index.html" >Trivia</a></li>
-                        <li><a href="#" >Another One Coming Soon? </a></li>
-                    </ul>
-                </nav>
-            </header>
-            <section>
-                <main>
-                    <article>
-                        <figure class="hero">
-                            <img src="2succeed.jpg"/>
-                            <figcaption>
-                                <h1>Welcome to 2Succeed Online Resources</h1>
-                            </figcaption>
-                        </figure>
-                        <h2 style="font-size: 2em">Bingo and Fun Activities?</h2>
-                        <hr>
-                        
-                    </article>
-                </main>
-                <footer>
-                </footer>
-            </section>          
-        </div>
-        <script type="text/javascript" src="index.js"></script>
-    </body>
-</html>
+<html lang="en">
+<head>
+  <title>2Succeed Online</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="index.js"></script>
+  <script src="recipes/js/jquery.js"></script>
+  <script src="recipes/js/bootstrap.js"></script> 
+</head>
+<body ng-app="myApp" ng-controller="subjectCtrl">
 
+<div class="jumbotron text-center">
+  <h1>2Succeed Online</h1> 
+  <p>Home of the Extra Web Based Tools</p>
+  <div class="search-wrap"><input type="text" ng-model="single" class="form-control" placeholder="Search" /></div>  
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" ng-repeat="x in subjects | filter:single" onclick="window.location='http://google.com';">
+            <div>
+                <h3>{{x.name}}</h3>
+                <p>{{x.title}} [{{x.instructor}}]</p>
+                <p>{{x.description}}</p>
+            </div>
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>
