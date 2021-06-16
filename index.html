@@ -18,18 +18,22 @@
   <p>Home of the Extra Web Based Tools</p>
   <div class="search-wrap"><input type="text" ng-model="single" class="form-control" placeholder="Search" /></div>  
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4" ng-repeat="x in subjects | filter:single" onclick="window.location='http://google.com';">
-            <div>
-                <h3>{{x.name}}</h3>
-                <p>{{x.title}} [{{x.instructor}}]</p>
-                <p>{{x.description}}</p>
-            </div>
+  <div class="col-sm-4" ng-repeat="x in subjects | filter:single">
+    <div class="card" ng-click="goto(x.url)">
+      <div class="image">
+        <img src="http://loremflickr.com/320/150?random=5" />
+      </div>
+      <div class="card-inner">
+        <div class="header">
+          <h2>{{x.name}}</h2>
+          <h3>{{x.title}}</h2>
+      </div>
+      <div class="content">
+        <p>{{x.description}}</p>
+      </div>
+        </div>
     </div>
   </div>
-
-
 </div>
 </body>
 </html>
