@@ -116,6 +116,22 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
          recipes:["Set Oven to 350","make batter?","separate and Color half of batter","bake 8-12 minutes","once cooled roll them in powdered sugar"], 
          rating:[1,2,3,4,5]
         },
+        {id:16, 
+            name:"Brie Bites with Cranberry", 
+            description:"[Dessert] Kim's Recipe", 
+            link: "https://www.wellplated.com/wp-content/uploads/2019/12/Baked-Brie-Bites-268x268.jpg",
+            ingredients:["Frozen puff pastry (2 sheets)","Brie cheese (8 ounces)","Homemade Cranberry Sauce (1 cup)","flaky sea salt (1 teaspoon)","Chopped Pecans (1/2 cup)","Fresh Rosemary (4 springs)"], 
+            recipes:["Position oven racks in the upper and lower thirds of the oven and preheat the oven to 375 degrees F. Place the Brie in the freezer for 15 minutes to firm up. VERY generously coat 2, 24-cup mini muffin pans with nonstick spray (if you only have 1 pan or if you have 2, 12-cups pans, make the Brie bites in batches).","Unroll 1 sheet puff pastry on a lightly floured work surface (leave the second sheet in the refrigerator until you are ready to use it). Roll into a 10 x 14-inch rectangle. Cut the sheet lengthwise into 4 even strips. Cut crosswise into 6 even strips. You will have 24 squares total (each square will be about 2 ½ inches on each side). Gently separate the squares and press them into the mini muffin tins to create a puff pastry cup. With the tines of a fork, prick the bottom of each puff pastry in 2 to 3 places.","Cut the piece of Brie in half, then place 1 half back in the freezer. Dice the remaining Brie into 24 pieces (they will be between ¾ and 1/2-inch on each side). Place one piece of Brie in the center of each mini muffin cup. Top each piece of Brie with 1 teaspoon cranberry sauce. Sprinkle with ½ teaspoon salt, then half of the chopped pecans. Place in the refrigerator. Repeat with the second sheet of puff pastry, second half of Brie, and the remaining salt and pecans.","Place each muffin pan on a rimmed baking sheet to catch any cheese or cranberry that bubbles over. Bake the pans on the upper and lower thirds of the oven for 18 to 20 minutes, until the pastry is puffed and the corners are golden brown, switching the pans’ positions on the upper and lower racks once halfway through. Let cool in the pans for 3 minutes. If any of the Brie or cranberry has bubbled out, use a fork to scoot it back into the center of the bites (no one will know!).","Gently transfer the bites to a serving plate (I find a fork works well to transfer them). Garnish each with a small piece of fresh rosemary. Enjoy hot or at room temperature"], 
+            rating:[1,2,3,4,5]
+        },
+        {id:17, 
+            name:"Easy Cranberry Brie Bites", 
+            description:"[Dessert] Kim's Recipe", 
+            link: "https://www.thecountrycook.net/wp-content/uploads/2017/12/square-Cranberry-Brie-Bites-200x200.jpg",
+            ingredients:["all-purpose flour","1 (8 oz) tube crescent dough","1 (8 oz) wheel of brie cheese","1 cup whole berry cranberry sauce","fresh rosemary sprigs"], 
+            recipes:["Preheat oven to 375°f degrees. Spray a mini muffin tin with cooking spray. Spread a little flour out onto your counter. Then roll out crescent roll dough and pinch seams together. Cut crescent roll dough into 24 equal-sized squares. Place squares into muffin tin slots.","Cut brie into small pieces and place inside the crescent dough squares. Top with a generous spoonful of cranberry sauce, and a little sprig of rosemary.","Bake until the crescent dough is a light golden brown (about 15 minutes). Then serve warm!"], 
+            rating:[1,2,3,4,5]
+           },
     ];
     
     $scope.addToList = function(name, item){
