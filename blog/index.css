@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3, h6 {
+    display: inline;
+    padding: 15px;
+}
+
+img {
+    width: 55%;
+    border-radius: 25px;
+
+}
+
+span {
+    padding-top: 70px;
+    display: inline-block;
+}
+.navbar {
+    background-color: grey;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline;
+    padding-right: 18%;
+}
+
+.main-content {
+    padding-top: 40px;
+}
+
+.user-post {
+    background-color: rgb(91, 91, 136);
+    margin: 10px auto;
+    width: 75%;
+}
