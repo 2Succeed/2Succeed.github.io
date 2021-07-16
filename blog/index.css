@@ -14,12 +14,12 @@ h3, h6 {
 img {
     width: 55%;
     border-radius: 25px;
-
 }
 
 span {
-    padding-top: 70px;
+    padding-left: 25px;
     display: inline-block;
+    float: left;
 }
 .navbar {
     background-color: grey;
