@@ -131,7 +131,15 @@ angular.module('myApp', []).controller('recipeCtrl', function($scope) {
             ingredients:["all-purpose flour","1 (8 oz) tube crescent dough","1 (8 oz) wheel of brie cheese","1 cup whole berry cranberry sauce","fresh rosemary sprigs"], 
             recipes:["Preheat oven to 375°f degrees. Spray a mini muffin tin with cooking spray. Spread a little flour out onto your counter. Then roll out crescent roll dough and pinch seams together. Cut crescent roll dough into 24 equal-sized squares. Place squares into muffin tin slots.","Cut brie into small pieces and place inside the crescent dough squares. Top with a generous spoonful of cranberry sauce, and a little sprig of rosemary.","Bake until the crescent dough is a light golden brown (about 15 minutes). Then serve warm!"], 
             rating:[1,2,3,4,5]
-           },
+        },
+        {id:18, 
+            name:"Chicken Breast Recipe", 
+            description:"[Chicken] Kim's Recipe", 
+            link: "https://meateatingmilitaryman.com/wp-content/uploads/2018/04/smoked-chicken-breast.jpg",
+            ingredients:["water(2 quarts)","salt (1/2 cup)","sugar (1/2 cup)","chicken breast (6 pc)","soy sauce (1/4 cup)","lemon juice","olive oil","garlic powder (2 tbs)","black pepper (2tbs)","parsely (2tbs)","paprika (2tbs)","melted butter (1/2 cup)","brown sugar (1 cup)","rub mixture (2 pinch)","bbq sauce"], 
+            recipes:["Take the chicken from the refrigerator and bring it to the grill, setting the pieces over the water pan. The vents at the bottom of the grill will need to be adjusted once the meat touches the grill because it will cause the temperature to drop. It needs to remain at 250°F. If you can 'fine-tune' the intake baffle while the temperature rises, keeping the baffle wide open, it will soon reach the required cooking temperature of 250°F. Then you can close the baffle.","Don't peek! Lifting the lid to constantly check on the meat will slow down the cooking. Keep the lid closed for at least the first 45 minutes. During these minutes of waiting, you should begin to prepare your sauce so it will be ready for basting.","You can begin basting after the 45-minute mark, allowing a full 15 minutes for the sauce to seep into the chicken. This is a very easy thing to do. First, pour a bit of the sauce onto each piece of chicken, then use the basting brush or the back of a spoon to cover the meat's surface. After a couple of minutes repeat this process. For more of this flavor, turn the meat and baste the other side. To intensify those flavors even more, you can start basting a few minutes earlier, or keep the chicken on the grill and baste it for a few minutes longer.","After an hour, check the internal temperature by inserting the thermometer at the thickest part of the biggest piece of chicken. The internal temperature should be at least 165°F.","You are now free to remove the chicken from the grill. If you are new to smoked chicken, prepare to be pleasantly amazed and even impressed with yourself. Smoking and brining chicken breasts is a great way to prepare a meal. "], 
+            rating:[1,2,3,4,5]
+        },
     ];
     
     $scope.addToList = function(name, item){
