@@ -371,7 +371,7 @@ function runHalloween(){
             difficulty: "simpsons",
             incorrect_answers: ["Wendel","Martin","Lewis"],
             question: "In 'Nightmare Cafeteria', who was the last kid left in the room after Bart, Lisa and Milhouse snuck out?",
-        }, 
+        }
     ]
         questions.sort(() => Math.random() - 0.5);
         console.log("In Run Halloween",questions);
