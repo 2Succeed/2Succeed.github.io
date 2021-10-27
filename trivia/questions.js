@@ -1,4 +1,4 @@
-/* create our questions
+/*
 let questions = [
     {
         question : "What does HTML stand for?",
@@ -34,7 +34,7 @@ let questions = [
         correct : "C"
     },{
     
-    // real object orientation...
+    /* real object orientation...
     
     category: "Entertainment: Film"
 ​​

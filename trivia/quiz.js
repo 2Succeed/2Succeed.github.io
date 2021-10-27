@@ -121,6 +121,7 @@ function howMany(){
 function create(){
         document.getElementById("error").innerHTML = '';
         document.getElementById("nonerror").innerHTML = '';
+        document.getElementById("holiday").innerHTML = '';
         let c = document.getElementById("category").value;
         let n = document.getElementById("quantity").value;
         let d = document.getElementById("difficulty").value;
@@ -132,10 +133,11 @@ function create(){
         if(c != "1" && d != "any"){  url = 'https://opentdb.com/api.php?amount='+n+'&category='+c+'&difficulty='+d+'&type=multiple'; }
         console.log(url);
         setTimeout(doSomething, 3000);
+        
         let fetchRes = fetch(url);
         fetchRes.then(res => 
             res.json()).then(d => { 
-                /* CHANGE questions TO HARDCODE LATER */
+                // CHANGE questions TO HARDCODE LATER 
                 questions = d["results"];
                 if(d.response_code == 1){
                     nonerror.style.display = "none";
@@ -159,13 +161,115 @@ function create(){
             })  
         
 }
+
+function runHalloween(){
+    questions = [
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "Celts",
+            difficulty: "medium",
+            incorrect_answers: ["Vikings","Moors","Romans"],
+            question: "Halloween was started by which group of people?",
+        },
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "Spiderman",
+            difficulty: "medium",
+            incorrect_answers: ["Elsa","Ghost","Pumpkin"],
+            question: "What’s the most popular Halloween costume for kids in 2021?",
+        },
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "Bart",
+            difficulty: "simpsons",
+            incorrect_answers: ["Maggie","Lisa","Marge"],
+            question: "Lisa reads the story of 'The Raven' and Homer sees himself as the narrator. Who did Homer see as the raven?",
+        },
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "Reese's",
+            difficulty: "hmmmm idk",
+            incorrect_answers: ["M$M's","Milk Duds","Snickers"],
+            question: "Which of these types of candy is the most popular in the USA during Halloween?",
+        },
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "Jack-in-the-box",
+            difficulty: "simpsons",
+            incorrect_answers: ["Hoola Hoop","Basketball","Doll"],
+            question: "Bart turns Homer into a ______",
+        },        
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "Apple bobbing",
+            difficulty: "super duper easy",
+            incorrect_answers: ["Dipping for pears","Gone pineapple fishing","That’s my tomato!"],
+            question: "What’s the name of the activity that involves grabbing floating fruit with your teeth?",
+        },
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "Ireland",
+            difficulty: "super duper easy",
+            incorrect_answers: ["Brazil","India","Germany"],
+            question: "In which country did Halloween start?",
+        },
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "Good/Evil",
+            difficulty: "simpsons",
+            incorrect_answers: ["Good/Bad","Sad/Mad","On/Off"],
+            question: "On the back of Bart's Krusty doll was a switch. What were the choices?",
+        },  
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "1993",
+            difficulty: "medium",
+            incorrect_answers: ["1987","1999","2003"],
+            question: "The modern classic The Nightmare Before Christmas was released in what year?",
+        }, 
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "Daughter",
+            difficulty: "easy",
+            incorrect_answers: ["Mother","Father","Son"],
+            question: "Wednesday Addams is which member of the Addams family?",
+        }, 
+        {
+            category: "Halloween",
+            type: "multiple",
+            correct_answer: "Linus",
+            difficulty: "hard",
+            incorrect_answers: ["Snoopy","Sally","Schroeder"],
+            question: "In the 1966 classic ‘It’s the Great Pumpkin, Charlie Brown’, which character explains the tale of the Great Pumpkin?",
+        }, 
+    ]
+        questions.sort(() => Math.random() - 0.5);
+        console.log("In Run Halloween",questions);
+        setTimeout(doSomething, 3000);
+        startQuiz();
+}
+
 // render a question
 function renderQuestion(){
     let q = questions[runningQuestion];
     let ran = Math.floor((Math.random() * 4) + 1);
     let title = q.correct_answer.replace(/\s/g, '');
     question.innerHTML = "<p><h3>"+q.category+"["+q.difficulty+"]</h3>"+ q.question +"</p>";
-    qImg.innerHTML = "<img alt="+title+" title="+title+" src='img/logo.png'>";
+    if(q.category != "Halloween") { 
+        qImg.innerHTML = "<img alt="+title+" title="+title+" src='img/logo.png'>";
+    } else {
+        qImg.innerHTML = "<img alt="+title+" title="+title+" src='img/halloween.jpg'>";
+    }
     switch(ran) {
       case 1:
             correct = 'D';
@@ -205,6 +309,7 @@ function renderQuestion(){
 
 // start quiz
 function startQuiz(){
+    console.log("In Start Quiz");
     lastQuestion = questions.length - 1;
     start.style.display = "none";
     renderQuestion();
