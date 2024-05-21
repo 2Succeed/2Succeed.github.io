@@ -15,7 +15,7 @@ h1 {
 }
 
 header {
-    background-color:  #0076c0;
+    background-color:  #008778;
     flex: 0 0 20px;
     color: white;
     padding: 4px;
@@ -25,7 +25,7 @@ header {
 }
 footer {
     
-    background-color:  #0076c0;
+    background-color:  #008778;
     position: fixed; 
     bottom: 0;
     left: 0;
@@ -59,7 +59,7 @@ article {
 }
 
 table {
-    background-color: #0076c0;
+    background-color: #008778;
     border-radius: 10px;
     border: 1px solid black;
     padding: 2px;
@@ -104,10 +104,10 @@ main article {
     align-items: center;
 }
 
-.blue { background-color: #336699; }
-.red { background-color: #FF6666; }
+.blue { background-color: #006B6B; }
+.red { background-color: #FF6B45; }
 .green { background-color: #99CC99; }
-.yellow { background-color: #FFCC99; }
+.yellow { background-color: #FFBF00; }
 .cardtitle { 
     font-size: 20px;
     background-color: #0076c0;
