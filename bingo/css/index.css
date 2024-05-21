@@ -111,6 +111,7 @@ main article {
 .cardtitle { 
     font-size: 20px;
     background-color: #006B6B;
+    color: whitesmoke;
     font-style: bold;
 }
 
@@ -188,7 +189,7 @@ main article {
 .slider::-moz-range-thumb {
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: #FFAC00; /* Green background */
+  background: #FFAC00; /* Yellow background */
   cursor: pointer; /* Cursor on hover */
 }
 
